@@ -126,7 +126,7 @@ export function AppHeader() {
             className="text-muted-foreground hover:text-foreground hidden sm:flex"
             render={
               <a
-                href="https://github.com"
+                href="https://github.com/nilsbtr/dim-wishlist-editor"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -141,10 +141,10 @@ export function AppHeader() {
             className="text-muted-foreground hover:text-foreground hidden sm:flex"
             render={
               <a
-                href="https://twitter.com"
+                href="https://x.com/ShaxxsNightclub"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Twitter"
+                aria-label="X (Twitter)"
               />
             }
           >

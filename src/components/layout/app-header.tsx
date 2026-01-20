@@ -2,7 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useState } from "react";
 
 import { useQueryClient } from "@tanstack/react-query";
-import { Github, Home, List, RefreshCw, Sparkles, Twitter } from "lucide-react";
+import { Github, Home, List, RefreshCw, Twitter } from "lucide-react";
 import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
@@ -65,9 +65,11 @@ export function AppHeader() {
         <div className="flex items-center gap-6">
           {/* Logo */}
           <Link to="/" className="group flex items-center gap-2.5">
-            <div className="from-primary to-primary/80 flex size-8 items-center justify-center rounded-lg bg-gradient-to-br shadow-sm transition-transform group-hover:scale-105">
-              <Sparkles className="size-4 text-black" />
-            </div>
+            <img
+              src="/logo-white.svg"
+              alt="DWLE Logo"
+              className="size-8 transition-transform group-hover:scale-105"
+            />
             <span className="hidden text-sm font-semibold tracking-tight sm:inline">
               DIM Wishlist Editor
             </span>

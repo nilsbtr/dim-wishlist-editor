@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
 import { useQuery } from "@tanstack/react-query";
-import { FolderOpen, Layers, LayoutGrid, Sparkles, Star, Target } from "lucide-react";
+import { FolderOpen, Layers, LayoutGrid, Star, Target } from "lucide-react";
 
 import { EmptyState } from "@/components/layout/empty-state";
 import { Card, CardContent } from "@/components/ui/card";
@@ -236,25 +236,12 @@ function StatsCard({
 function EmptyWishlistState() {
   return (
     <Card className="border-dashed border-white/10 bg-gradient-to-br from-white/[0.02] to-transparent">
-      <CardContent className="py-20">
+      <CardContent className="py-16">
         <EmptyState
           icon={FolderOpen}
           title="No Wishlists Yet"
-          description="Create your first wishlist to start tracking your preferred weapon rolls."
-        >
-          <div className="flex flex-col items-center gap-6">
-            <div className="from-primary/20 flex size-20 items-center justify-center rounded-2xl bg-gradient-to-br to-transparent">
-              <Sparkles className="text-primary size-10" />
-            </div>
-            <div className="flex items-center gap-3">
-              <ImportWishlist />
-              <CreateWishlistDialog />
-            </div>
-            <p className="text-muted-foreground max-w-sm text-center text-sm">
-              Import an existing wishlist file or create a new one from scratch
-            </p>
-          </div>
-        </EmptyState>
+          description="Create a new wishlist or import an existing one using the buttons above."
+        />
       </CardContent>
     </Card>
   );

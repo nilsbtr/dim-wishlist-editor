@@ -1,0 +1,40 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, pnpm-lock.yaml"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "files.readonlyInclude": {
+    "node_modules/**": true,
+    "**/routeTree.gen.ts": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "search.exclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "eslint.lintTask.options": "src",
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "prettier.prettierPath": "node_modules/prettier",
+  "prettier.requireConfig": true,
+  "prettier.resolveGlobalModules": false,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "[javascript][typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never"
+    }
+  }
+}

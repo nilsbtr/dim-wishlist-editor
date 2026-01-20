@@ -1,0 +1,39 @@
+{
+  "tab_size": 2,
+  "remove_trailing_whitespace_on_save": true,
+  "format_on_save": "on",
+  "formatter": "prettier",
+  "file_scan_exclusions": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/CVS/**",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/node_modules/**",
+    "**/routeTree.gen.ts"
+  ],
+  "languages": {
+    "CSS": {
+      "language_servers": ["tailwindcss-language-server"]
+    },
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": false
+      }
+    },
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": false
+      }
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": false
+      }
+    }
+  }
+}
